@@ -1,0 +1,85 @@
+@import '@/app/globals.scss';
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    max-width: 40rem;
+    background: linear-gradient(to right, rgba(255, 167, 24, 0.15), rgba(70, 181, 255, 0.15));
+    padding: 5rem 7rem;
+    border-radius: 2rem;
+    @media screen and (max-width: 750px) {
+        padding: 5rem 1rem;
+        width: 100%;
+    }
+}
+
+.title{
+    color:$black-color;
+    font-size: 20px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    >input{
+        padding: .85rem 1rem;
+        border-radius: 25px;
+        outline: none;
+        border: 1px solid #7c7c7c;
+        &:focus{
+            border: 1px solid rgb(62, 101, 255)!important;
+        }
+    }
+    >textarea{
+        padding: .85rem 1rem;
+        border-radius: 25px;
+        outline: none;
+        border: 1px solid #7c7c7c;
+        height: 130px;
+        resize: vertical;
+        overflow: auto;
+        &:focus{
+            border: 1px solid rgb(62, 101, 255)!important;
+        }
+    }
+}
+
+.name {
+    display: flex;
+    gap: .5rem;
+    width: 100%;
+    @media screen and (max-width: 500px) {
+       flex-direction: column;
+    }
+    >input{
+        flex-grow: 1;
+        padding: .85rem 1rem;
+        border-radius: 25px;
+        outline: none;
+        border: 1px solid #7c7c7c;
+        &:focus{
+            border: 1px solid rgb(62, 101, 255)!important;
+        }
+    }
+    >input:first-child::placeholder::after{
+        content: "*";
+    }
+}
+
+.policy {
+    display: flex;
+    align-items: flex-start;
+    gap: .6rem;
+    >input{
+        width: 35px;
+        height: 30px;
+    }
+    >label{
+        font-size: 14px;
+        line-height: 28px;
+        user-select: none;
+        color:$text-desc;
+    }
+}

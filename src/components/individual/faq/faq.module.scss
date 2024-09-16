@@ -1,0 +1,49 @@
+/* faq.module.scss */
+
+.faq_com {
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s, transform 0.2s;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.faq_com:hover {
+  background-color: #ebf8ff; /* hover:bg-blue-50 */
+}
+
+.faq_com:active {
+  transform: scale(0.95);
+}
+
+.faq_com_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.faq_header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text_md {
+  font-size: 1rem; /* Adjust as per your requirement */
+  font-weight: 500;
+  flex: 1;
+}
+
+.text_xl {
+  font-size: 1.25rem; /* Adjust as per your requirement */
+}
+
+.text_description {
+  color: #6b7280; /* Adjust color as per your requirement */
+}
+
+.text_sm {
+  font-size: 14px; /* Adjust as per your requirement */
+  line-height:30px;
+  max-width: 32rem;
+}

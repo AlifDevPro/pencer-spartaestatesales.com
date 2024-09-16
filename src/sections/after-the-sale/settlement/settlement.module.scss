@@ -1,0 +1,49 @@
+@import '@/app/globals.scss';
+
+.settlement{
+    padding: 6rem 0rem;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0e2;
+}
+
+.settlementWrapper{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    @media only screen and (max-width: 710px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center!important;
+    }
+    
+}
+.image{
+    max-width: 40rem;
+    
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @media only screen and (max-width: 710px) {
+        order: 2;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 36px;
+        font-weight: 800;
+        color: $black-color;
+    }
+    p{
+        font-size: 14px;
+        line-height: 30px;
+        color: $text-desc;
+        margin-bottom: 1rem;
+        max-width: 30rem;
+    }
+}

@@ -1,0 +1,37 @@
+@import '@/app/globals.scss';
+
+.card{
+    max-width: 433px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.11);
+    border-top: 4px solid $orange;
+}
+.cardWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    >h2{
+        font-size: 16px;
+    }
+    >p{
+        font-size: 14px;
+        font-weight: 4010;
+        color: $text-desc;
+        line-height: 30px;
+    }
+}
+.icon{
+    height: 3.6rem;
+    width: 3.6rem;;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+    >svg{
+        height: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,31 @@
+@import '@/app/globals.scss';
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 20rem;
+    >h1{
+        font-size: 44px;
+        color: $black-color;
+    }
+    >p{
+        font-size: 14px;
+        color: $text-desc;
+        line-height: 30px;
+    }
+}
+
+.contactInfoWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.2rem;
+    >div{
+        display: flex;
+        gap: .7rem;
+        >svg{
+            fill: $orange;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import '@/app/globals.scss';
+
+.footer{
+    background-color: #FCFCFC;
+    padding: 5rem 0 1rem 0;
+}
+.footerWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    grid-gap: 2rem;
+    justify-content: center;
+}
+.privacy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #dedede;
+    padding: 1.5rem 0;
+    >P{
+        text-align: center;
+        font-size: 14px;
+        color: $text-desc;
+    }
+}

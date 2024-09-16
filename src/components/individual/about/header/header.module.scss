@@ -1,0 +1,35 @@
+@import '@/app/globals.scss';
+
+.headline{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    >h1{
+        font-size: clamp(24px, 4vw, 44px);
+        color: $orange;
+        max-width: 32rem;
+        @media screen and (max-width: 1230px) {
+            display: none;
+        }
+    }
+    >div{
+        width: .2rem;
+        height: 5rem;
+        background: $orange;
+        border-radius: 10%;
+        @media screen and (max-width: 1230px) {
+            display: none;
+        }
+    }
+    >p{
+        font-size: 14px;
+        font-weight: 500;
+        color:#424242;
+        line-height: 30px;
+        max-width: 650px;
+        @media screen and (max-width: 1230px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import '@/app/globals.scss';
+
+.areas{
+    padding: 5rem 0rem;
+}
+
+.areasWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        p{
+            font-size: 14px;
+            color: $text-desc;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+    .textMap{
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .text{
+            border: 1px solid #d6d6d6;
+            border-radius: 10px;
+            padding: 1rem;
+            flex-grow: 1;
+            text-align: center;
+            background-color: rgb(255, 250, 244);
+            transition: all .15s ease;
+            &:hover{
+                background-color: #fff;
+            }
+            p{
+                color: $text-desc;
+                font-size: 14px;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import "@/app/globals.scss";
+
+.services{
+    padding: 6rem 0rem;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    max-width: 35rem;
+    >h1{
+        font-size: clamp(24px, 4vw, 44px);
+        color: $orange;
+    }
+    >p{
+        color: $text-desc;
+        line-height: 30px;
+        font-size: 14px;
+    }
+}
+
+.servicesWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.servicesBody{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1.3rem;
+
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      }
+}
+.cta{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    >a{
+        display: flex;
+        align-items: center;
+        gap: .4rem;
+        font-weight: 500;
+        color: black;
+    }
+}

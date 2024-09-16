@@ -1,0 +1,12 @@
+.cta{
+    background: linear-gradient(to right, rgba(254, 198, 0, 0.15), rgba(96, 217, 255, 0.15));
+}
+.ctaWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+    }
+
+}

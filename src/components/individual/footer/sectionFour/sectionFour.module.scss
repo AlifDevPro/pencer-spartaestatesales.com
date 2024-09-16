@@ -1,0 +1,43 @@
+.footerHeading{
+    font-size: 14px;
+    font-weight: 700;
+}
+.sectionFour{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 15rem;
+    >div{
+        display: flex;
+        flex-direction: column;
+        gap:.8rem;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+        >li{
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    >input{
+        padding: .65rem 1rem;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid #3333;
+    }
+    >button{
+        padding: .65rem 1rem;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid #3333;
+    }
+}

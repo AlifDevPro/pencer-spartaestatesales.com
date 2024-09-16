@@ -1,0 +1,53 @@
+@import '@/app/globals.scss';
+
+.button {
+  padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: fit-content;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  &:hover{
+    background: $primary-color!important;
+    color: #333!important;
+  }
+
+  &.primary {
+    color: $black-color;
+    background-color: $primary-color;
+  }
+
+  &.secondary {
+    color: $black-color;
+    background-color: transparent;
+    border: 1.2px solid $primary-color;
+  }
+
+  .icon {
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+  }
+
+  .circle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: transform 0.5s, background-color 0.3s;
+    pointer-events: none;
+    background: white;
+  }
+  .label{
+    z-index: 100;
+  }
+}

@@ -1,0 +1,48 @@
+@import '@/app/globals.scss';
+
+.searchPreview {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 4rem; // Adjust the top value according to your needs
+  background-color: white;
+  border: 1px solid #e5e7eb; // Light gray border
+  border-radius: 0.5rem; // Rounded corners
+  padding: 0.5rem 0; // Vertical padding
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Drop shadow
+  transition: all 0.2s ease-in-out;
+}
+
+.searchPreviewWrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  gap: 1rem; // Space between icon and text
+  padding: 0.5rem 1.5rem; // Padding for each service item
+  text-decoration: none; // Remove underline from links
+  color: inherit; // Inherit text color
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #f1f5f9; // Light gray background on hover
+  }
+
+  svg {
+    width: 1rem; // Width of the icon
+    height: 1rem; // Height of the icon
+    fill: inherit;
+  }
+
+  .title {
+    font-size: 14px; // Font size for the title
+    font-weight: 500; // Medium font weight
+    color: #4b5563; // Slate-600 color
+  }
+}

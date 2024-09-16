@@ -1,0 +1,28 @@
+@import '@/app/globals.scss';
+
+.point{
+    display: flex;
+    gap: .8rem;
+}
+.dot{
+    height: 0.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: $orange;
+    margin-top: .3rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    >h4{
+        color:$orange;
+    }
+    >p{
+        max-width: 40rem;
+        color: $text-desc;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.8;
+    }
+}

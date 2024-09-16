@@ -1,0 +1,29 @@
+@import '@/app/globals.scss';
+
+.ftf{
+    padding: 5rem 0rem;
+}
+.ftfWrapper{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    @media screen and (max-width: 750px) {
+        flex-direction: column;
+    }
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    >h1{
+        font-size: clamp(24px, 4vw, 44px);
+        color: $black-color;
+        max-width: 30rem;
+    }
+    >p{
+        font-size: 14px;
+        color: $text-desc;
+        line-height: 30px;
+        max-width: 40rem;
+    }
+}

@@ -1,0 +1,33 @@
+@import '@/app/globals.scss';
+
+.missionCard{
+    max-width: 20rem;
+    background: white;
+    box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.06);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #eeeeee;
+}
+.cardWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.icon{
+    >svg{
+        width: 1.2rem;
+        height: 1.2rem;
+        fill: #0083fc;
+    }
+}
+.title{
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #33343f;
+}
+.tag{
+    font-size: 13px;
+    font-weight: 600;
+    color: blue;
+}

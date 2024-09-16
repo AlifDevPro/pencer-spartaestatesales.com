@@ -1,0 +1,42 @@
+@import "@/app/globals.scss";
+
+.header{
+    margin-top: -6rem;
+    padding: 10rem 0 8rem 0;
+    background: linear-gradient(to right, rgba(26, 16, 7, .5), rgba(0, 0, 0, 0)), url('/homeAssets/headerBG.png');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width: 930px) {
+        margin-top: 0rem;
+        padding: 4rem 0 4rem 0;
+    }
+}
+
+.headerWrapper{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+    >h1{
+        color: #FFF;
+        font-size: clamp(28px, 5vw, 64px);
+        line-height: 1.6;
+        max-width: 1090px;
+        
+    }
+    >p{
+        color: #f0f0f0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 35px;
+        max-width: 40rem;
+        margin-top: -2rem;
+    }
+    >div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .8rem;
+    }
+}

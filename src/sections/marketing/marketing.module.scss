@@ -1,0 +1,51 @@
+.marketing{
+    background: #FCFCFC;
+    padding: 5rem 0rem;
+}
+.marketingWrapper{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    @media screen and (max-width: 780px) {
+       flex-direction: column;
+    }
+}
+
+.body{
+    padding: 4rem 0rem;
+    display: flex;
+    gap: 4rem;
+}
+.headline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >h1{
+        >h1{
+            font-size: clamp(24px, 4vw, 44px);
+            max-width: 32rem;
+            text-align: center;
+            @media screen and (max-width: 700px) {
+                max-width: 25rem;
+            }
+        }
+    }
+}
+.points{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    @media screen and (max-width: 780px) {
+        order: 2;
+     }
+}
+.cta{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}

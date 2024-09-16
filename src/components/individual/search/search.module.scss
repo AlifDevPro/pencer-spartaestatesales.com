@@ -1,0 +1,94 @@
+@import '@/app/globals.scss';
+
+.search {
+  flex-grow: 1;
+  position: relative;
+  transition: all 0.5s ease;
+  margin: 0!important;
+  padding: .5rem;
+  @media (max-width: 1095px) { // sm breakpoint
+    display: none;
+  }
+  @media (min-width: 640px) { // sm breakpoint
+    flex-grow: 1;
+  }
+
+  @media (min-width: 1024px) { // lg breakpoint
+    margin-left: 4rem;
+  }
+
+  &.open {
+    flex-grow: 1;
+  }
+}
+
+.searchWrapper {
+  background-color: #F0F3F9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 9999px;
+  padding: 0.25rem;
+  min-width: 16rem;
+  height: 3rem;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #EAEFF6;
+  }
+}
+
+.searchInput {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-size: 14px;
+  outline: none;
+  flex-shrink: 0;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, padding 0.2s ease-in-out;
+  
+  &::placeholder {
+    color: #4A5568; // Zinc-700
+  }
+
+  @media (min-width: 640px) { // sm breakpoint
+    padding: 0.75rem 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  &.open {
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1rem;
+  }
+}
+
+.searchButton {
+  position: absolute;
+  right: 4px;
+  outline: none;
+  border: none;
+  background-color: $primary-color; // Primary color
+  aspect-ratio: 1;
+  height: 2.5rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(255, 188, 19, 0.9); // Primary color with opacity
+  }
+}
+
+.suggestionsWrapper {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}

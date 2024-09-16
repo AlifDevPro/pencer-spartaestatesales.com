@@ -1,0 +1,70 @@
+@import '@/app/globals.scss';
+
+.navbar{
+    padding: 2.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    // z-index: 999;
+    @media screen and (max-width: 930px) {
+        display: hidden;
+        border-top: 1px solid #dfdfdf;
+        position: absolute;
+        top: 3.7rem;
+        right: 0;
+        left: 0;
+        // bottom: 0;
+        background-color: white;
+        color: #333!important;
+        height: 100vh;
+    }
+}
+.active{
+    background: white;
+    padding: 1.5rem 0;
+    color: #333;
+    transition: background .5s ease;
+    box-shadow: 2px -10px 20px;
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navWrapper{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 930px) {
+        flex-direction: column;
+        gap: 0;
+        color: #333!important;
+        transform: translateX(0);
+        
+    }
+}
+
+.hidden{
+    @media screen and (max-width: 930px) {
+        transform: translateX(100%);
+        transition: all .2s ease;
+    }
+    
+}
+.show{
+    @media screen and (max-width: 930px) {
+        transform: translateX(0);
+        transition: all .2s ease;
+    }
+}
+
+.action{
+    display: none;
+    @media screen and (max-width: 930px) {
+        display: block;
+        display: flex;
+        gap: .5rem;
+        margin-top: 2rem;
+        justify-content: flex-start;
+    }
+}

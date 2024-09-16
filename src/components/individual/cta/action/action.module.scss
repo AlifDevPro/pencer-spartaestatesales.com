@@ -1,0 +1,23 @@
+@import '@/app/globals.scss';
+
+.action{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @media screen and (max-width: 800px) {
+        padding: 3rem 0;
+        border-bottom: 20px solid white;
+    }
+    >h1{
+        color: $black-color;
+        font-size: 30px;
+        @media screen and (max-width: 800px) {
+            font-size: 23px;
+        }
+    }
+    >p{
+        font-size: 14px;
+        line-height: 30px;
+        max-width: 29rem;
+    }
+}

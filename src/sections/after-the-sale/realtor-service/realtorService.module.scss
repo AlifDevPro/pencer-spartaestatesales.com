@@ -1,0 +1,48 @@
+@import '@/app/globals.scss';
+
+.realtor{
+    padding: 6rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+.realtorWrapper{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    @media only screen and (max-width: 710px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    
+}
+.image{
+    max-width: 40rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @media only screen and (max-width: 710px) {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    h1{
+        font-size: 44px;
+        font-weight: 800;
+        color: $black-color;
+    }
+    p{
+        font-size: 14px;
+        line-height: 30px;
+        color: $text-desc;
+        margin-bottom: 1rem;
+        max-width: 30rem;
+    }
+}

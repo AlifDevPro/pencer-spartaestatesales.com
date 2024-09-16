@@ -1,0 +1,139 @@
+/* SchedulerForm.module.scss */
+
+.formContainer {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+    padding: 0 2rem;
+  }
+  
+  .formContainer::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  .header {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    >h2{
+        font-size: 1rem;
+    }
+    .icon{
+      font-size: 1rem;
+    }
+    span{
+      font-size: .85rem!important;
+    }
+  }
+  
+  .dateTimeContainer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    >span{
+        font-size: 1rem;
+        margin-left: -.5rem;
+    }
+  }
+  
+  .dateTimeContainer > div {
+    display: flex;
+    gap: 0.1rem;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .formSection {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    
+  }
+  .fullName{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    > .formSection{
+      flex-grow: 1;
+    }
+  }
+  
+  .label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    color: #222;
+    outline: none;
+  }
+
+  .comments{
+    resize: vertical;
+  }
+  
+  .selectField {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    color: #222;
+    outline: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="%23222" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5H7z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 0.75rem);
+    background-position-y: center;
+  }
+  
+  .checkboxContainer {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .checkboxLabel {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
+    user-select: none;
+  }
+  
+  .checkbox {
+    width: 1rem;
+    height: 1rem;
+  }
+  .checkbox:active{
+    scale: 1.8;
+    transition: all  1s ease;
+  }
+  
+  .buttonContainer {
+    position: sticky;
+    bottom: 1rem;
+    margin: 1rem 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, .5));
+  }
+  
+  .error{
+    font-size: 12px;
+    color: red;
+  }

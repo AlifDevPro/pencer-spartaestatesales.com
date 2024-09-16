@@ -1,0 +1,55 @@
+.faq {
+    background-color: #f1f5f9; /* bg-slate-50 */
+  }
+
+  
+  .faq_wrapper {
+    padding-top: 6rem; /* py-24 */
+    padding-bottom: 6rem; /* py-24 */
+  }
+  
+  .faq_header {
+    font-size: 0.875rem; /* text-sm */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  
+  .bg_tertiary {
+    background-color: var(--tertiary-color); /* bg-tertiary */
+    width: fit-content;
+    line-height: 2.5rem; /* leading-10 */
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    border-radius: 9999px; /* rounded-full */
+    font-weight: 600; /* font-semibold */
+    display: block;
+  }
+  
+  .header_title {
+    color: black; /* text-black */
+    font-weight: 700; /* font-bold */
+    font-size: 2.25rem; /* text-4xl */
+    // line-height: 1.5rem; /* leading-normal */
+  }
+  
+  .header_subtitle {
+    color: #646567;
+    line-height: 1.5rem; /* leading-6 */
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1rem; /* gap-4 */
+    grid-template-columns: 1fr;
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+    }
+  }
+  

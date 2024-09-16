@@ -1,0 +1,19 @@
+@import '@/app/globals.scss';
+
+.footerInfo{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    max-width: 15rem;
+    >div{
+        width: 2rem;
+    }
+    >h1{
+        font-size: 16px;
+    }
+    >p{
+        font-size: 14px;
+        line-height: 30px;
+        color: $text-desc;
+    }
+}
